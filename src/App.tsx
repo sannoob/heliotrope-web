@@ -1,18 +1,7 @@
 import * as React from 'react'
-
-import {
-  ChakraProvider,
-  extendTheme,
-} from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import Header from './Header'
-
-const theme = extendTheme({
-  fonts: {
-    heading: 'Inter, Noto Sans KR',
-    body: 'Inter, Noto Sans KR'
-  },
-  initialColorMode: 'dark'
-})
+import theme from './theme'
 
 function App() {
   const { useEffect } = React
